@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/form.css" rel="stylesheet"></link>
+</head>
+<body>
+<body>
+
+<form th:action="@{/form}" th:object="${userForm}" method="post">
+
+    <table>
+        <tr>
+            <th class="cell_title">氏名</th>
+            <td>
+                <input type="text" th:field="*{name}">
+            </td>
+        </tr>
+        <tr>
+            <th class="cell_title">E-Mail</th>
+            <td>
+                <input type="text" th:field="*{email}">
+            </td>
+        </tr>
+        <tr>
+            <th class="cell_title">年齢</th>
+            <td>
+                <input type="number" th:field="*{age}">
+            </td>
+        </tr>
+    </table>
+    <button class="btn">送信</button>
+</form>
+</body>
+</html>

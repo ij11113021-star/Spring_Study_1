@@ -30,7 +30,7 @@ public class UserForm {
     // 必須入力、20文字以下であること
     @NotBlank(message = "備考を入力してください。", groups = Group1.class)
     @Size(min = 1, max = 20, message = "備考は20文字以内で入力してください。", groups = Group2.class)
-    private String memo;
+    private String note;
 
     public interface Group1 {}
     public interface Group2 {}

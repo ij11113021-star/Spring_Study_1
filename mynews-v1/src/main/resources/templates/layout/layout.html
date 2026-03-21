@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html th:lang="ja" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{/css/layout/layout.css}">
+	<link rel="stylesheet" th:href="@{/css/fragments/header.css}">
+	<title>ニュースアプリ</title>
+</head>
+
+<body>
+	<th:block th:replace="fragments/header::header"></th:block>
+	<th:block layout:fragment="contents"></th:block>
+</body>
+
+</html>
